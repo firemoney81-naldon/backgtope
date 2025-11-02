@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수입차 보험사이트 모음 유럽·일본차 전용 정보 한곳에</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        
+        :root {
+            /* 부드러운 색감 팔레트 */
+            --primary-color: #5d8c89; /* 차분한 민트/녹청색 */
+            --secondary-color: #f5f5dc; /* 부드러운 베이지 */
+            --accent-color: #e09f7d; /* 따뜻한 테라코타 */
+            --text-color: #333333;
+            --link-color: #1a73e8; /* 기본 링크 색상 */
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #6a6a6a;
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .link-card {
+            background-color: var(--bg-light);
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .link-card h3 {
+            color: var(--accent-color);
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .link-card p {
+            font-size: 0.95em;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        .link-card a {
+            display: block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 400;
+            word-break: break-all;
+            font-size: 0.85em;
+        }
+
+        .description-link {
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--text-color); /* 설명 문구 자체의 색상을 텍스트와 동일하게 */
+            transition: color 0.2s;
+        }
+
+        .description-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* 시각적 계층 구조 강화를 위한 타이포그래피 */
+        h1, h3 {
+            letter-spacing: -0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>수입차 보험사이트 모음 유럽·일본차 전용 정보 한곳에</h1>
+            <p>저희 사이트가 준비한 **최적의 보험 솔루션**으로 안심하고 달리세요.</p>
+        </header>
+        
+        <div class="link-grid">
+            <script>
+                // 원본 데이터
+                const rawLinks = {
+                    "자차보험가입": "http://directcarpromota.cafe24.com/",
+                    "자동차종합보험가격": "http://directcarpromotb.cafe24.com/",
+                    "자동차보험회사순위": "http://directcarpromotg.cafe24.com/",
+                    "첫자동차보험료": "http://directcarpromoti.cafe24.com/",
+                    "차 보험료": "http://directcarpromotk.cafe24.com/",
+                    "자동차보험가격비교": "http://directcarpromotl.cafe24.com/",
+                    "인터넷자동차보험": "http://directcarpromoto.cafe24.com/",
+                    "다이렉트자동차보험비교견적": "http://m.directcarpromotq.cafe24.com/",
+                    "자동차보험가족한정범위": "https://directcarpromots.cafe24.com/",
+                    "자동차책임보험가격": "https://directcarpromotv.cafe24.com/",
+                    "자동차보험 다이렉트 비교": "https://directcarpromotw.cafe24.com/",
+                    "자동차보험료계산": "http://bohumpromotiona.cafe24.com/",
+                    "자동차보험할증기준": "http://bohumpromotionb.cafe24.com/",
+                    "자동차보험료1년": "http://bohumpromotionc.cafe24.com/",
+                    "자동차보험비교견적": "http://bohumpromotiond.cafe24.com/",
+                    "20대자동차보험료": "http://bohumpromotione.cafe24.com/",
+                    "자동차보험견적": "http://bohumpromotionf.cafe24.com/",
+                    "자동차보험추천": "http://bohumpromotiong.cafe24.com/",
+                    "다이렉트자동차보험료": "http://bohumpromotioni.cafe24.com/",
+                    "만26세 자동차보험": "http://bohumpromotionk.cafe24.com/",
+                    "신규 자동차보험": "https://bohumpromotionl.cafe24.com/",
+                    "자동차보험비교견적사이트": "https://bohumpromotionm.cafe24.com/",
+                    "자동차 책임보험 가입": "http://bohumpromotionn.cafe24.com/",
+                    "전기차보험료": "http://bohumpromotiono.cafe24.com/",
+                    "자동차보험순위": "https://bohumpromotionp.cafe24.com/",
+                    "20살자동차보험료": "https://bohumpromotionq.cafe24.com/",
+                    "자동차보험 경력인정": "https://bohumpromotionr.cafe24.com/",
+                    "자동차보험조회": "https://bohumpromotions.cafe24.com/",
+                    "자동차보험종류": "https://bohumpromotiont.cafe24.com/",
+                    "만26세 자동차보험 (withusdone)": "https://directcarunmea.withusdone.com/",
+                    "운전병보험할인": "https://directcarunmeb.withusdone.com/",
+                    "만21세 자동차보험": "https://directcarunmec.withusdone.com/",
+                    "만19세 자동차보험": "https://directcarunmed.withusdone.com/",
+                    "20대자동차보험": "https://directcarunmee.withusdone.com/",
+                    "20살자동차보험료 (withusdone)": "https://directcarunmef.withusdone.com/",
+                    "만24세자동차보험": "https://directcarunmeg.withusdone.com/",
+                    "만20세자동차보험": "https://directcarunmeh.withusdone.com/",
+                    "신차보험가입 (withusdone)": "https://directcarunmei.withusdone.com/",
+                    "만25세 자동차보험": "https://directcarunmej.withusdone.com/",
+                    "만23세 자동차보험": "https://directcarunmek.withusdone.com/",
+                    "20대차보험료": "https://directcarunmel.withusdone.com/",
+                    "신차자동차보험료": "https://directcarunmem.withusdone.com/",
+                    "자동차보험 연령": "https://directcarunmen.withusdone.com/",
+                    "만22세자동차보험": "https://directcarunmeo.withusdone.com/",
+                    "만18세자동차보험": "https://directcarunmep.withusdone.com/",
+                    "20살차보험료": "https://directcarunmeq.withusdone.com/",
+                    "30대자동차보험료": "https://directcarunmer.withusdone.com/",
+                    "21살자동차보험": "https://directcarunmes.withusdone.com/",
+                    "20살자동차보험": "https://directcarunmet.withusdone.com/",
+                    "22살자동차보험": "https://directcarunmeu.withusdone.com/",
+                    "22살자동차보험료": "https://directcarunmev.withusdone.com/",
+                    "24살자동차보험": "https://directcarunmew.withusdone.com/",
+                    "40대자동차보험료": "https://directcarunmex.withusdone.com/",
+                    "23살자동차보험": "https://directcarunmey.withusdone.com/",
+                    "만28세자동차보험": "https://directcarunmez.withusdone.com/",
+                    "20대초반자동차보험": "https://directcarunma.withusdone.com/",
+                    "20대초반자동차보험료": "https://directcarunmb.withusdone.com/",
+                    "만30세자동차보험": "https://directcarunmc.withusdone.com/",
+                    "만28세자동차보험료 (withusdone)": "https://directcarunmd.withusdone.com/",
+                    "자동차보험료1년 (withusdone)": "https://directcarunmf.withusdone.com/",
+                    "수입차보험료": "https://directupromotiona.withusdone.com/",
+                    "차량보험": "https://directupromotionb.withusdone.com/",
+                    "자동차보험 경력인정 (withusdone)": "https://directupromotionc.withusdone.com/",
+                    "자동차누구나보험": "https://directupromotiond.withusdone.com/",
+                    "자동차보험료계산기": "https://directupromotione.withusdone.com/",
+                    "첫차보험료": "https://directupromotioni.withusdone.com/",
+                    "차보험계산": "https://directupromotionj.withusdone.com/",
+                    "차량보험료": "https://directupromotionl.withusdone.com/",
+                    "자동차보험자녀할인": "https://directupromotionn.withusdone.com/",
+                    "자차보험료": "https://directupromotiono.withusdone.com/",
+                    "중고차보험료": "https://directupromotionp.withusdone.com/",
+                    "자동차보험 만기": "https://directupromotionq.withusdone.com/",
+                    "다이렉트자동차보험추천": "https://directupromotionr.withusdone.com/",
+                    "자동차보험비": "https://directupromotions.withusdone.com/",
+                    "자동차보험료 할부": "https://directupromotiont.withusdone.com/",
+                    "자동차보험책임보험": "https://directupromotionv.withusdone.com/",
+                    "자동차보험가입방법": "https://directupromotionw.withusdone.com/",
+                    "실시간자동차보험견적": "https://directupromotionx.withusdone.com/",
+                    "자동차보험 만나이": "https://directupromotiony.withusdone.com/",
+                    "자동차보험료비교견적사이트": "https://directapmoa.withusdone.com/",
+                    "자동차보험비교": "https://directapmob.withusdone.com/",
+                    "자동차보험료비교견적": "https://directapmoc.withusdone.com/",
+                    "자동차다이렉트보험": "https://directapmod.withusdone.com/",
+                    "자동차보험다이렉트": "https://directapmoe.withusdone.com/",
+                    "자동차 다이렉트 비교 견적 사이트 추천": "https://directapmof.withusdone.com/",
+                    "자동차보험료계산 (withusdone)": "https://directapmog.withusdone.com/",
+                    "다이렉트자동차보험비교": "https://directapmoh.withusdone.com/",
+                    "자동차보험할증기준 (withusdone)": "https://directapmoi.withusdone.com/",
+                    "자동차책임보험": "https://directapmoj.withusdone.com/",
+                    "자동차보험료1년 (withusdone-2)": "https://directapmok.withusdone.com/",
+                    "자동차보험조회 (withusdone)": "https://directapmol.withusdone.com/",
+                    "자동차보험할증": "https://directapmom.withusdone.com/",
+                    "다이렉트자동차보험비교견적사이트": "https://directapmon.withusdone.com/",
+                    "자동차보험비교견적 (withusdone)": "https://directapmoo.withusdone.com/",
+                    "다이렉트자동차보험료비교견적사이트": "https://directapmop.withusdone.com/",
+                    "자동차보험료비교": "https://directapmoq.withusdone.com/",
+                    "자동차보험료계산기 (withusdone)": "https://directapmor.withusdone.com/",
+                    "자동차보험동일증권": "https://directapmos.withusdone.com/",
+                    "다이렉트자동차보험비교견적 (withusdone)": "https://directapmot.withusdone.com/",
+                    "자동차보험비교견적사이트 (withusdone-2)": "https://directapmou.withusdone.com/",
+                    "자동차종합보험": "https://directapmov.withusdone.com/",
+                    "내자동차보험조회": "https://directapmow.withusdone.com/",
+                    "자동차보험종류 (withusdone)": "https://directapmox.withusdone.com/",
+                    "자동차보험료할증": "https://directapmoy.withusdone.com/",
+                    "자동차다이렉트보험비교": "https://directapmoz.withusdone.com/",
+                    "자동차보험다이렉트비교": "https://directbpmoa.withusdone.com/",
+                    "자동차보험확인": "https://directbpmob.withusdone.com/",
+                    "차보험료 (withusdone)": "https://directbpmoc.withusdone.com/",
+                    "20대자동차보험료 (withusdone)": "https://directbpmod.withusdone.com/",
+                    "자동차보험미가입과태료": "https://directbpmoe.withusdone.com/",
+                    "자동차보험견적 (withusdone)": "https://directbpmof.withusdone.com/",
+                    "차보험": "https://directbpmog.withusdone.com/",
+                    "자동차보험갱신": "https://directbpmoh.withusdone.com/",
+                    "자동차보험추천 (withusdone)": "https://directbpmoi.withusdone.com/",
+                    "자동차보험나이": "https://directbpmoj.withusdone.com/",
+                    "자동차보험비교사이트": "https://directbpmok.withusdone.com/",
+                    "자동차보험이력조회": "https://directbpmol.withusdone.com/",
+                    "자동차보험가족한정범위 (withusdone)": "https://directbpmom.withusdone.com/",
+                    "자동차보험자기부담금": "https://directbpmon.withusdone.com/",
+                    "자동차보험경력인정": "https://directbpmoo.withusdone.com/",
+                    "자동차의무보험": "https://directbpmop.withusdone.com/",
+                    "자동차보험가입": "https://directbpmoq.withusdone.com/",
+                    "다이렉트자동차보험료 (withusdone)": "https://directbpmor.withusdone.com/",
+                    "자동차상해특약": "https://directbpmos.withusdone.com/",
+                    "자동차보험료조회": "https://directbpmot.withusdone.com/",
+                    "다이렉트자동차보험비교사이트": "https://directbpmou.withusdone.com/",
+                    "경차보험료": "https://directbpmov.withusdone.com/",
+                    "자동차다이렉트보험비교견적사이트": "https://directbpmow.withusdone.com/",
+                    "자동차보험대물배상": "https://directbpmox.withusdone.com/",
+                    "자동차보험자차": "https://directbpmoy.withusdone.com/",
+                    "자차보험할증": "https://directbpmoz.withusdone.com/",
+                    "자동차보험할부": "https://directcpmoa.withusdone.com/",
+                    "외제차보험료": "https://directcpmob.withusdone.com/",
+                    "자동차보험료인상": "https://directcpmoc.withusdone.com/",
+                    "외제차보험": "https://directcpmod.withusdone.com/",
+                    "자동차보험승계": "https://directcpmoe.withusdone.com/",
+                    "자동차보험할인할증등급": "https://directcpmof.withusdone.com/",
+                    "자동차보험갱신기간": "https://directcpmog.withusdone.com/",
+                    "자동차보험등급": "https://directcpmoh.withusdone.com/",
+                    "자동차보험만기": "https://directcpmoi.withusdone.com/",
+                    "자동차보험만기일": "https://directcpmoj.withusdone.com/",
+                    "자동차공동명의보험": "https://directcpmok.withusdone.com/",
+                    "다이렉트자동차보험료비교견적": "https://directcpmol.withusdone.com/",
+                    "자동차보험 신규": "https://directcpmom.withusdone.com/",
+                    "다이렉트차보험비교": "https://directcpmon.withusdone.com/",
+                    "자동차보험가입조회": "https://directcpmoo.withusdone.com/",
+                    "자동차보험계산": "https://directcpmop.withusdone.com/",
+                    "자동차책임보험가입": "https://directcpmoq.withusdone.com/",
+                    "내차보험조회": "https://directcpmor.withusdone.com/",
+                    "다이렉트자동차보험료비교": "https://directcpmos.withusdone.com/",
+                    "내가 가입한 자동차보험 조회": "https://directcpmot.withusdone.com/",
+                    "자동차책임보험가격 (withusdone)": "https://directcpmou.withusdone.com/",
+                    "자차보험자기부담금": "https://directcpmov.withusdone.com/",
+                    "자동차보험사": "https://directcpmow.withusdone.com/",
+                    "자동차보험변경": "https://directcpmox.withusdone.com/",
+                    "자동차보험회사": "https://directcpmoy.withusdone.com/",
+                    "자동차누구나보험 (withusdone)": "https://directcpmoz.withusdone.com/",
+                    "자동차보험부모님": "https://directdpmoa.withusdone.com/",
+                    "자동차보험지정1인": "https://directdpmob.withusdone.com/",
+                    "자동차보험자상": "https://directdpmoc.withusdone.com/",
+                    "전기차보험료비교": "https://directdpmod.withusdone.com/",
+                    "자동차상해보험": "https://directdpmoe.withusdone.com/",
+                    "차량보험료 (withusdone)": "https://directdpmof.withusdone.com/",
+                    "자동차보험가입경력": "https://directdpmog.withusdone.com/",
+                    "자동차보험견적비교사이트": "https://directdpmoh.withusdone.com/",
+                    "자동차보험순위 (withusdone)": "https://directdpmoi.withusdone.com/",
+                    "자동차가족보험": "https://directdpmoj.withusdone.com/",
+                    "다이렉트자동차보험견적": "https://directdpmok.withusdone.com/",
+                    "자동차보험인상": "https://directdpmol.withusdone.com/",
+                    "첫차보험료 (withusdone)": "https://directdpmom.withusdone.com/",
+                    "자동차보험사고할증": "https://directdpmon.withusdone.com/",
+                    "자동차보험자동차상해": "https://directdpmoo.withusdone.com/",
+                    "차량보험가입조회": "https://directdpmop.withusdone.com/",
+                    "자동차보험싼곳": "https://directdpmoq.withusdone.com/",
+                    "법인자동차보험": "https://directdpmor.withusdone.com/",
+                    "자동차보험이전": "https://directdpmos.withusdone.com/",
+                    "차량보험조회": "https://directdpmot.withusdone.com/",
+                    "자동차보험저렴한곳": "https://directdpmou.withusdone.com/",
+                    "자동차보험인터넷": "https://directdpmov.withusdone.com/",
+                    "자동차보험벌금": "https://directdpmow.withusdone.com/",
+                    "자동차보험할증조회": "https://directdpmox.withusdone.com/",
+                    "자동차보험차량변경": "https://directdpmoy.withusdone.com/",
+                    "자차보험뜻": "https://directdpmoz.withusdone.com/",
+                    "타는만큼내는보험": "https://directepmoa.withusdone.com/",
+                    "자동차보험가격": "https://directepmob.withusdone.com/",
+                    "자동차자차보험": "https://directepmoc.withusdone.com/",
+                    "자동차보험다이렉트견적": "https://directepmod.withusdone.com/",
+                    "자동차명의이전보험": "https://directepmoe.withusdone.com/",
+                    "저렴한자동차보험": "https://directepmof.withusdone.com/",
+                    "자동차보험안들면": "https://directepmog.withusdone.com/",
+                    "자동차책임보험한도": "https://directepmoh.withusdone.com/",
+                    "자동차2대보험": "https://directepmoi.withusdone.com/",
+                    "자동차 보험 인상률": "https://directepmoj.withusdone.com/",
+                    "중고차보험": "https://directepmok.withusdone.com/",
+                    "신차보험가입 (withusdone-2)": "https://directepmol.withusdone.com/",
+                    "내자동차보험찾기": "https://directepmom.withusdone.com/",
+                    "자동차보험미가입": "https://directepmon.withusdone.com/",
+                    "자동차보험혜택": "https://directepmoo.withusdone.com/",
+                    "자차보험이란": "https://directepmop.withusdone.com/",
+                    "자동차보험누구나": "https://directepmoq.withusdone.com/",
+                    "자동차보험할인등급": "https://directepmor.withusdone.com/",
+                    "자동차보험료할인": "https://directepmos.withusdone.com/",
+                    "자동차보험차량가액": "https://directepmot.withusdone.com/",
+                    "자동차보험대물": "https://directepmou.withusdone.com/",
+                    "자동차보험일년": "https://directepmov.withusdone.com/",
+                    "자동차보험명의변경": "https://directepmow.withusdone.com/",
+                    "자동차보험책임보험 (withusdone)": "https://directepmox.withusdone.com/",
+                    "자동차보험가입확인": "https://directepmoy.withusdone.com/",
+                    "자동차보험추가": "https://directepmoz.withusdone.com/",
+                    "자동차보험질권설정": "https://directfpmoa.withusdone.com/",
+                    "다이렉트자동차보험사이트": "https://directfpmob.withusdone.com/",
+                    "자동차보험1인추가": "https://directfpmoc.withusdone.com/",
+                    "자동차보험1년가격": "https://directfpmod.withusdone.com/",
+                    "자동차보험비 (withusdone)": "https://directfpmoe.withusdone.com/",
+                    "자동차보험등급조회": "https://directfpmof.withusdone.com/",
+                    "자동차보험주말가입": "https://directfpmog.withusdone.com/",
+                    "세닉 E-Tech 보험료": "https://directfpmoh.withusdone.com/",
+                    "자동차보험피보험자": "https://directfpmoi.withusdone.com/",
+                    "자동차보험가족추가": "https://directfpmoj.withusdone.com/",
+                    "자동차보험운전경력": "https://directfpmok.withusdone.com/",
+                    "신차자동차보험": "https://directfpmol.withusdone.com/",
+                    "자동차보험찾기": "https://directfpmom.withusdone.com/",
+                    "차보험계산 (withusdone)": "https://directfpmon.withusdone.com/",
+                    "자동차보험무이자할부": "https://directfpmoo.withusdone.com/",
+                    "자동차보험할증등급": "https://directfpmop.withusdone.com/",
+                    "자동차보험분할납부": "https://directfpmoq.withusdone.com/",
+                    "차보험료계산": "https://directfpmor.withusdone.com/",
+                    "자차할증": "https://directfpmos.withusdone.com/",
+                    "자동차보험명의": "https://directfpmot.withusdone.com/",
+                    "자동차보험대인배상2": "https://directfpmou.withusdone.com/",
+                    "신차보험": "https://directfpmov.withusdone.com/",
+                    "중고차보험가입": "https://directfpmow.withusdone.com/",
+                    "차량보험이력조회": "https://directfpmox.withusdone.com/",
+                    "자동차보험카드결제": "https://directfpmoy.withusdone.com/",
+                    "자동차보험분납": "https://directfpmoz.withusdone.com/",
+                    "자동차보험계산기 (withusdone-2)": "https://directgpmoa.withusdone.com/",
+                    "다이렉트차보험료": "https://directgpmob.withusdone.com/",
+                    "자동차보험료견적비교": "https://directgpmoc.withusdone.com/",
+                    "자동차보험연령 (withusdone)": "https://directgpmod.withusdone.com/",
+                    "자동차보험자기신체사고": "https://directgpmoe.withusdone.com/",
+                    "자동차보험자손": "https://directgpmof.withusdone.com/",
+                    "자동차보험책임보험만": "https://directgpmog.withusdone.com/",
+                    "자동차보험기간": "https://directgpmoh.withusdone.com/",
+                    "자동차보험가격비교 (withusdone)": "https://directgpmoi.withusdone.com/",
+                    "자동차보험자기차량손해": "https://directgpmoj.withusdone.com/",
+                    "인터넷자동차보험비교견적": "https://directgpmok.withusdone.com/",
+                    "자동차종합보험가격 (withusdone)": "https://directgpmol.withusdone.com/",
+                    "개인사업자자동차보험": "https://directgpmom.withusdone.com/",
+                    "자동차보험환입": "https://directgpmon.withusdone.com/",
+                    "화물차보험": "https://directgpmoo.withusdone.com/",
+                    "중고차보험료 (withusdone-2)": "https://directgpmop.withusdone.com/",
+                    "차보험나이": "https://directgpmoq.withusdone.com/",
+                    "내자동차보험": "https://directgpmor.withusdone.com/",
+                    "다이렉트자동차보험추천 (withusdone)": "https://directgpmos.withusdone.com/",
+                    "자동차보험회사종류": "https://directgpmot.withusdone.com/",
+                    "자차보험료 (withusdone)": "https://directgpmou.withusdone.com/",
+                    "자동차보험요율": "https://directgpmov.withusdone.com/",
+                    "자동차보험카드혜택": "https://directgpmow.withusdone.com/",
+                    "자동차보험수가": "https://directgpmox.withusdone.com/",
+                    "자동차보험료견적": "https://directgpmoy.withusdone.com/",
+                    "벤츠보험료": "https://directgpmoz.withusdone.com/",
+                    "무면허자동차보험": "https://directhpmoa.withusdone.com/",
+                    "공동명의자동차보험": "https://directhpmob.withusdone.com/",
+                    "부모님차보험": "https://directhpmoc.withusdone.com/",
+                    "자동차보험필수": "https://directhpmod.withusdone.com/",
+                    "다이렉트자동차보험견적비교": "https://directhpmoe.withusdone.com/",
+                    "30대자동차보험료 평균 얼마 무료 실시간 조회": "https://directhpmof.withusdone.com/",
+                    "자동차보험의무": "https://directhpmog.withusdone.com/",
+                    "자동차보험2대 (withusdone)": "https://directhpmoh.withusdone.com/",
+                    "자동차보험회사순위 (withusdone)": "https://directhpmoi.withusdone.com/",
+                    "자동차보험사확인": "https://directhpmoj.withusdone.com/",
+                    "자동차보험납부": "https://directhpmok.withusdone.com/",
+                    "중고차자동차보험": "https://directhpmol.withusdone.com/",
+                    "자기차량손해보험": "https://directhpmom.withusdone.com/",
+                    "부부자동차보험": "https://directhpmon.withusdone.com/",
+                    "자동차보험가입기간": "https://directhpmoo.withusdone.com/",
+                    "경차자동차보험": "https://directhpmop.withusdone.com/",
+                    "내차보험료": "https://directhpmoq.withusdone.com/",
+                    "자동차보험설계사": "https://directhpmor.withusdone.com/",
+                    "자동차보험갈아타기": "https://directhpmos.withusdone.com/",
+                    "자동차보험금": "https://directhpmot.withusdone.com/",
+                    "자동차보험부부": "https://directhpmou.withusdone.com/",
+                    "자동차보험할인카드": "https://directhpmov.withusdone.com/",
+                    "자동차보험료분납": "https://directhpmow.withusdone.com/",
+                    "장애인자동차보험": "https://directhpmox.withusdone.com/",
+                    "화물차보험료": "https://directhpmoy.withusdone.com/",
+                    "자동차보험료납부": "https://directhpmoz.withusdone.com/",
+                    "자동차보험월납": "https://directipmoa.withusdone.com/",
+                    "자동차 보험 인상률 계산기": "https://directipmob.withusdone.com/",
+                    "테슬라보험료": "https://directipmoc.withusdone.com/",
+                    "자동차보험재가입": "https://directipmod.withusdone.com/",
+                    "제네시스G80보험료": "https://directipmoe.withusdone.com/",
+                    "자동차보험장애인": "https://directipmof.withusdone.com/",
+                    "자동차보험신용카드": "https://directipmog.withusdone.com/",
+                    "자동차보험료확인": "https://directipmoh.withusdone.com/",
+                    "자동차손해보험": "https://directipmoi.withusdone.com/",
+                    "다이렉트자동차보험저렴한곳": "https://directipmoj.withusdone.com/",
+                    "자동차보험중복가입": "https://directipmok.withusdone.com/",
+                    "자동차보험키로수": "https://directipmol.withusdone.com/",
+                    "자차보험가입 (withusdone)": "https://directipmom.withusdone.com/",
+                    "자동차보험증명서": "https://directipmon.withusdone.com/",
+                    "자동차보험6개월": "https://directipmoo.withusdone.com/",
+                    "자동차보험1년 (withusdone)": "https://directipmop.withusdone.com/",
+                    "자동차보험견적비교": "https://directipmoq.withusdone.com/",
+                    "자동차보험타는만큼": "https://directipmor.withusdone.com/",
+                    "자동차보험카드할부": "https://directipmos.withusdone.com/",
+                    "캠핑카보험": "https://directipmot.withusdone.com/",
+                    "캠핑카보험료": "https://directipmou.withusdone.com/",
+                    "자동차보험금액": "https://directipmov.withusdone.com/",
+                    "자동차보험비용": "https://directipmow.withusdone.com/",
+                    "차보험조회": "https://directipmox.withusdone.com/",
+                    "차보험비교사이트": "https://directipmoy.withusdone.com/",
+                    "자동차보험사추천": "https://directipmoz.withusdone.com/",
+                    "화물보험": "https://directjpmoa.withusdone.com/",
+                    "새차보험": "https://directjpmob.withusdone.com/",
+                    "자동차인터넷보험": "https://directjpmoc.withusdone.com/",
+                    "차량책임보험": "https://directjpmod.withusdone.com/",
+                    "다이렉트자동차보험료계산": "https://directjpmoe.withusdone.com/",
+                    "자동차보험담보": "https://directjpmof.withusdone.com/",
+                    "자동차보험가입경력인정": "https://directjpmog.withusdone.com/",
+                    "자동차보험비교추천": "https://directjpmoh.withusdone.com/",
+                    "자동차보험신규 (withusdone)": "https://directjpmoi.withusdone.com/",
+                    "외국인자동차보험": "https://directjpmoj.withusdone.com/",
+                    "자동차보험카드할인": "https://directjpmok.withusdone.com/",
+                    "탄만큼내는자동차보험": "https://directjpmol.withusdone.com/",
+                    "온라인자동차보험": "https://directjpmom.withusdone.com/",
+                    "자동차보험 26세": "https://directjpmon.withusdone.com/",
+                    "자동차보험보장": "https://directjpmoo.withusdone.com/",
+                    "인터넷자동차보험료비교견적사이트": "https://directjpmop.withusdone.com/",
+                    "다이렉트자동차보험순위": "https://directjpmoq.withusdone.com/",
+                    "자동차보험결제": "https://directjpmor.withusdone.com/",
+                    "차보험비": "https://directjpmos.withusdone.com/",
+                    "차보험비교": "https://directjpmot.withusdone.com/",
+                    "차보험료조회": "https://directjpmou.withusdone.com/",
+                    "자동차보험차량기준가액": "https://directjpmov.withusdone.com/",
+                    "차량보험비교": "https://directjpmow.withusdone.com/",
+                    "차량보험료조회": "https://directjpmox.withusdone.com/",
+                    "차량보험가입": "https://directjpmoy.withusdone.com/",
+                    "미성년자자동차보험": "https://directjpmoz.withusdone.com/",
+                    "실시간자동차보험료비교견적사이트": "https://directkpmoa.withusdone.com/",
+                    "자동차보험인터넷가입": "https://directkpmob.withusdone.com/",
+                    "자동차보험등급확인": "https://directkpmoc.withusdone.com/",
+                    "자동차보험가액": "https://directkpmod.withusdone.com/",
+                    "누구나자동차보험": "https://directkpmoe.withusdone.com/",
+                    "자차가입": "https://directkpmof.withusdone.com/",
+                    "자동차보험설계": "https://directkpmog.withusdone.com/",
+                    "탄만큼내는보험 (withusdone)": "https://directkpmoh.withusdone.com/",
+                    "자동차보험가입거절": "https://directkpmoi.withusdone.com/",
+                    "경차자동차보험료": "https://directkpmoj.withusdone.com/",
+                    "자동차보험서비스": "https://directkpmok.withusdone.com/",
+                    "자동차보험가입방법 (withusdone)": "https://directkpmol.withusdone.com/",
+                    "자동차보험저렴": "https://directkpmom.withusdone.com/",
+                    "자동차보험료싼곳": "https://directkpmon.withusdone.com/",
+                    "차보험확인": "https://directkpmoo.withusdone.com/",
+                    "차량보험료계산": "https://directkpmop.withusdone.com/",
+                    "자동차책임보험가입방법": "https://directkpmoq.withusdone.com/",
+                    "자동차보험사순위": "https://directkpmor.withusdone.com/",
+                    "전기차자동차보험": "https://directkpmos.withusdone.com/",
+                    "자동차보험점유율": "https://directkpmot.withusdone.com/",
+                    "자동차보험가입내역조회": "https://directkpmou.withusdone.com/",
+                    "자동차보험료카드": "https://directkpmov.withusdone.com/",
+                    "자동차보험상담": "https://directkpmow.withusdone.com/",
+                    "자동차보험료비교사이트": "https://directkpmox.withusdone.com/",
+                    "자동차의무보험가입": "https://directkpmoy.withusdone.com/",
+                    "차보험료비교": "https://directkpmoz.withusdone.com/",
+                    "레이자동차보험": "https://directlpmoa.withusdone.com/",
+                    "자동차보험료갱신": "https://directlpmob.withusdone.com/",
+                    "아이오닉9보험료": "https://directlpmoc.withusdone.com/",
+                    "첫차보험": "https://directlpmod.withusdone.com/",
+                    "자동차보험가입혜택": "https://directlpmoe.withusdone.com/",
+                    "자동차다이렉트보험비교견적": "https://directlpmof.withusdone.com/",
+                    "이쿼녹스EV 보험료": "https://directlpmog.withusdone.com/",
+                    "자동차보험당일가입": "https://directlpmoh.withusdone.com/",
+                    "자동차다이렉트비교": "https://directlpmoi.withusdone.com/",
+                    "자동차책임보험료": "https://directlpmoj.withusdone.com/",
+                    "제네시스 GV90 보험료": "https://directlpmok.withusdone.com/",
+                    "화물자동차보험": "https://directlpmol.withusdone.com/",
+                    "콜로라도보험료": "https://directlpmom.withusdone.com/",
+                    "1톤트럭보험료": "https://directlpmon.withusdone.com/",
+                    "자동차보험싸게": "https://directlpmoo.withusdone.com/",
+                    "자동차보험등록": "https://directlpmop.withusdone.com/",
+                    "카이엔 보험료": "https://directlpmoq.withusdone.com/",
+                    "40대자동차보험": "https://directlpmor.withusdone.com/",
+                    "자동차보험알아보기": "https://directlpmos.withusdone.com/",
+                    "자동차보험신규가입": "https://directlpmot.withusdone.com/",
+                    "코란도 kr10 보험료": "https://directlpmou.withusdone.com/",
+                    "자동차보험비교어플": "https://directlpmov.withusdone.com/",
+                    "차량의무보험": "https://directlpmow.withusdone.com/",
+                    "자동차보험예상": "https://directlpmox.withusdone.com/",
+                    "다이렉트차보험": "https://directlpmoy.withusdone.com/",
+                    "인터넷다이렉트보험": "https://directlpmoz.withusdone.com/",
+                    "자동차보험만료": "https://directmpmoa.withusdone.com/",
+                    "자동차보험가입시간": "https://directmpmob.withusdone.com/",
+                    "자동차첫보험료": "https://directmpmoc.withusdone.com/",
+                    "내차자동차보험": "https://directmpmod.withusdone.com/",
+                    "자동차보험료카드결제": "https://directmpmoe.withusdone.com/",
+                    "자동차필수보험": "https://directmpmof.withusdone.com/",
+                    "자동차책임보험보상": "https://directmpmog.withusdone.com/",
+                    "르노5보험료": "https://directmpmoh.withusdone.com/",
+                    "캉구 보험료": "https://directmpmoi.withusdone.com/",
+                    "자동차보험료저렴한곳": "https://directmpmoj.withusdone.com/",
+                    "화물차자동차보험": "https://directmpmok.withusdone.com/",
+                    "자동차보험료예상": "https://directmpmol.withusdone.com/",
+                    "자동차다이렉트보험견적": "https://directmpmom.withusdone.com/",
+                    "다이렉트보험비교견적": "https://directmpmon.withusdone.com/",
+                    "다이렉트자동차보험가입": "https://directmpmoo.withusdone.com/",
+                    "자동차다이렉트보험추천": "https://directmpmop.withusdone.com/",
+                    "자동차보험다이렉트비교사이트": "https://directmpmoq.withusdone.com/",
+                    "자동차보험가입이력": "https://directmpmor.withusdone.com/",
+                    "개인자동차보험": "https://directmpmos.withusdone.com/",
+                    "자동차보험누구나운전": "https://directmpmot.withusdone.com/",
+                    "자동차보험금조회": "https://directmpmou.withusdone.com/",
+                    "자동차종합보험비교": "https://directmpmov.withusdone.com/",
+                    "차량보험료비교": "https://directmpmow.withusdone.com/",
+                    "19살자동차보험": "https://directmpmox.withusdone.com/",
+                    "만30세자동차보험 (withusdone)": "https://directmpmoy.withusdone.com/",
+                    "법인차량보험료": "https://directmpmoz.withusdone.com/",
+                    "법인차자동차보험": "https://directnpmoa.withusdone.com/",
+                    "캠핑카자동차보험": "https://directnpmob.withusdone.com/",
+                    "만28세자동차보험료 (withusdone-2)": "https://directnpmoc.withusdone.com/",
+                    "자동차보험산출": "https://directnpmod.withusdone.com/",
+                    "법인차량자동차보험": "https://directnpmoe.withusdone.com/",
+                    "K8보험료": "https://directnpmof.withusdone.com/",
+                    "자동차보험검색": "https://directnpmog.withusdone.com/",
+                    "트위지보험": "https://directnpmoh.withusdone.com/",
+                    "자동차다이렉트보험계산": "https://directnpmoi.withusdone.com/",
+                    "자동차보험다이렉트차이": "https://directnpmoj.withusdone.com/",
+                    "차보험다이렉트": "https://directnpmok.withusdone.com/",
+                    "다이렉트보험추천": "https://directnpmol.withusdone.com/",
+                    "23살차보험료": "https://directnpmom.withusdone.com/",
+                    "차량보험비": "https://directnpmon.withusdone.com/",
+                    "자동차보험어플": "https://directnpmoo.withusdone.com/",
+                    "자동차보험전화가입": "https://directnpmop.withusdone.com/",
+                    "벤츠S클래스보험료": "https://directnpmoq.withusdone.com/",
+                    "자동차보험종합보험": "https://directnpmor.withusdone.com/",
+                    "자동차보험사종류": "https://directnpmos.withusdone.com/",
+                    "자동차보험통합": "https://directnpmot.withusdone.com/",
+                    "첫차자동차보험료": "https://directnpmou.withusdone.com/",
+                    "업무용차량보험": "https://directnpmov.withusdone.com/",
+                    "22살차보험료": "https://directnpmow.withusdone.com/",
+                    "다이렉트자동차보험싼곳": "https://directnpmox.withusdone.com/",
+                    "다이렉트자동차보험조회": "https://directnpmoy.withusdone.com/",
+                    "차종별보험료": "https://directnpmoz.withusdone.com/",
+                    "다이렉트자동차보험견적비교사이트": "https://directopmoa.withusdone.com/",
+                    "저렴한다이렉트자동차보험": "https://directopmob.withusdone.com/",
+                    "자동차보험비교혜택": "https://directopmoc.withusdone.com/",
+                    "자동차보험료분할납부": "https://directopmod.withusdone.com/",
+                    "1톤트럭보험": "https://directopmoe.withusdone.com/",
+                    "자동차의무보험가격": "https://directopmof.withusdone.com/",
+                    "자차보험조회": "https://directopmog.withusdone.com/",
+                    "자동차보험드는법": "https://directopmoh.withusdone.com/",
+                    "자차보험가격": "https://directopmoi.withusdone.com/",
+                    "자동차보험할인특약": "https://directopmoj.withusdone.com/",
+                    "자동차보험들기": "https://directopmok.withusdone.com/",
+                    "자동차보험전연령": "https://directopmol.withusdone.com/",
+                    "자동차보험12개월": "https://directopmom.withusdone.com/",
+                    "무쏘 ev 보험료": "https://directopmon.withusdone.com/",
+                    "인터넷자동차보험비교견적사이트": "https://directopmoo.withusdone.com/",
+                    "자동차보험견적사이트": "https://directopmop.withusdone.com/",
+                    "자동차보험비교사이트순위": "https://directopmoq.withusdone.com/",
+                    "자동차보험료다이렉트": "https://directopmor.withusdone.com/",
+                    "차량보험견적": "https://directopmos.withusdone.com/",
+                    "차보험견적": "https://directopmot.withusdone.com/",
+                    "자동차보험비교하기": "https://directopmou.withusdone.com/",
+                    "자동차보험가입하기": "https://directopmov.withusdone.com/",
+                    "BMW자동차보험": "https://directopmow.withusdone.com/",
+                    "자동차다이렉트보험순위": "https://directopmox.withusdone.com/",
+                    "차량다이렉트보험": "https://directopmoy.withusdone.com/",
+                    "자동차보험다이렉트가입": "https://directopmoz.withusdone.com/",
+                    "자동차보험료산정": "https://directppmoa.withusdone.com/",
+                    "자동차보험어디": "https://directppmob.withusdone.com/",
+                    "자동차보험가입비교": "https://directppmoc.withusdone.com/",
+                    "자동차비교보험": "https://directppmod.withusdone.com/",
+                    "자동차보험다이렉트비교견적": "https://directppmoe.withusdone.com/",
+                    "자동차다이렉트보험종류": "https://directppmof.withusdone.com/",
+                    "다이렉트자동차보험종류": "https://directppmog.withusdone.com/",
+                    "차보험료견적": "https://directppmoh.withusdone.com/",
+                    "다이렉트보험자동차": "https://directppmoi.withusdone.com/",
+                    "다이렉트자동차보험할인": "https://directppmoj.withusdone.com/",
+                    "다이렉트자동차보험계산 (withusdone)": "https://directppmok.withusdone.com/",
+                    "다이렉트자동차보험혜택": "https://directppmol.withusdone.com/",
+                    "사업자자동차보험": "https://directppmom.withusdone.com/",
+                    "차보험비교견적": "https://directppmon.withusdone.com/",
+                    "자동차다이렉트보험사": "https://directppmoo.withusdone.com/",
+                    "자동차보험비교조회": "https://directppmop.withusdone.com/",
+                    "차보험계산기": "https://directppmoq.withusdone.com/",
+                    "자동차다이렉트보험비교사이트": "https://directppmor.withusdone.com/",
+                    "다이렉트자동차보험저렴": "https://directppmos.withusdone.com/",
+                    "자동차보험료월납": "https://directppmot.withusdone.com/",
+                    "자동차신규보험": "https://directppmou.withusdone.com/",
+                    "인터넷자동차보험비교사이트": "https://directppmov.withusdone.com/",
+                    "온라인자동차보험비교견적": "https://directppmow.withusdone.com/",
+                    "인터넷자동차보험료비교": "https://directppmox.withusdone.com/",
+                    "다이렉트보험료비교견적": "https://directppmoy.withusdone.com/",
+                    "자동차보험다이렉트법인": "https://directppmoz.withusdone.com/",
+                    "자동차보험견적내기": "https://directpqmoa.withusdone.com/",
+                    "자동차다이렉트보험가격비교": "https://directpqmob.withusdone.com/"
+                };
+
+                // 무작위로 95개 선택 및 셔플 함수
+                function getRandomSubset(obj, size) {
+                    const keys = Object.keys(obj);
+                    
+                    // 최대 99개, 최소 80개, 현재 전체 갯수가 334개이므로 95개로 설정
+                    const selectedSize = Math.min(Math.max(80, size), Math.min(99, keys.length)); 
+
+                    // 키 셔플
+                    for (let i = keys.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [keys[i], keys[j]] = [keys[j], keys[i]];
+                    }
+
+                    // 선택된 키를 바탕으로 객체 생성
+                    const result = {};
+                    for (let i = 0; i < selectedSize; i++) {
+                        const key = keys[i];
+                        result[key] = obj[key];
+                    }
+
+                    return result;
+                }
+
+                // 무작위 설명 문구 생성 템플릿
+                function generateDescription(keyword) {
+                    const templates = [
+                        `복잡한 **${keyword}**의 미로를 한 번에 통과할 마법의 지도. 당신의 시간은 소중하니까요.`,
+                        `**${keyword}**, 더 이상 미루지 마세요. 미래의 평온함을 오늘 바로 설계하세요.`,
+                        `나만의 운전 패턴에 완벽하게 맞춘 **${keyword}**! 이제 합리적인 선택으로 바꾸세요.`,
+                        `**${keyword}**의 숨겨진 혜택까지 꼼꼼하게 찾아드립니다. 똑똑한 소비의 시작!`,
+                        `길 위의 모든 위험으로부터 당신의 **${keyword}**를 지켜줄 든든한 방패를 찾으세요.`,
+                        `궁극의 **${keyword}**를 위한 현명한 전략. 최고의 가성비를 지금 확인하세요.`,
+                        `**${keyword}**는 단순히 비용이 아닙니다. 예측 불가능한 상황에 대비하는 약속입니다.`,
+                        `왜 남들과 똑같은 보험을 드세요? **${keyword}**를 통해 당신만의 맞춤 설계를 경험하세요.`,
+                        `**${keyword}**를 클릭하는 순간, 복잡했던 보험 고민이 눈 녹듯 사라집니다.`,
+                        `단 5분이면 **${keyword}**의 최적의 해답을 찾을 수 있습니다. 지금 바로 도전하세요.`,
+                        `운전하는 당신의 나이와 경력에 최적화된 **${keyword}** 솔루션이 여기 있습니다.`,
+                        `**${keyword}** 비교는 필수! 한 곳에서 모든 회사의 견적을 투명하게 확인하세요.`,
+                        `당신의 소중한 차량을 위한 **${keyword}** 가입, 단 하나의 후회 없는 선택을 하세요.`,
+                        `**${keyword}**, 당신이 운전에만 집중할 수 있도록 곁을 지키는 조용한 헌신입니다.`,
+                        `불필요한 지출은 이제 그만! **${keyword}**에서 최저가 보장을 발견하세요.`,
+                        `**${keyword}**, 당신의 드라이브 라이프를 업그레이드할 가장 스마트한 방법입니다.`,
+                        `시간 낭비 없이 **${keyword}**의 모든 정보를 한 눈에! 속 시원한 보험 쇼핑을 즐기세요.`,
+                        `복잡함은 저희에게 맡기세요. 쉽고 빠르게 **${keyword}**의 정답을 찾아드립니다.`,
+                        `**${keyword}**의 격차, 결국 작은 차이가 큰 차이를 만듭니다. 지금 그 차이를 확인하세요.`,
+                        `평범함을 거부하는 당신을 위한 **${keyword}**의 특별한 기준을 만나보세요.`
+                    ];
+                    const randomIndex = Math.floor(Math.random() * templates.length);
+                    return templates[randomIndex].replace(/\*\*(.*?)\*\*/g, (match, p1) => `**${p1.replace(/\(.*\)/, '').trim()}**`);
+                }
+
+                // 95개 무작위 선택
+                const selectedLinks = getRandomSubset(rawLinks, 95);
+
+                // HTML 생성
+                let htmlContent = '';
+                for (const keyword in selectedLinks) {
+                    const url = selectedLinks[keyword];
+                    const description = generateDescription(keyword);
+                    
+                    htmlContent += `
+                        <div class="link-card">
+                            <h3>${keyword.replace(/\(.*\)/, '').trim()}</h3>
+                            <p>
+                                <a href="${url}" target="_blank" class="description-link">
+                                    ${description}
+                                </a>
+                            </p>
+                            <a href="${url}" target="_blank">${url}</a>
+                        </div>
+                    `;
+                }
+
+                // 결과 삽입
+                document.write(htmlContent);
+            </script>
+        </div>
+    </div>
+</body>
+</html>
